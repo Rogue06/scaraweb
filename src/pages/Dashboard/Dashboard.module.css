@@ -1,0 +1,173 @@
+/* src/pages/Dashboard/Dashboard.module.css */
+.dashboard {
+  /* Styles pour le conteneur principal du dashboard si nécessaire */
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end; /* Aligner les éléments à droite */
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem; /* Espace entre les groupes d'éléments */
+}
+
+.integrationLinks {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.integrationLinks span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem; /* Espace entre icône et texte */
+}
+.integrationLinks img {
+  opacity: 0.8;
+}
+
+.menuToggle {
+  /* Style basique pour le bouton burger */
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  /* Cacher sur desktop, montrer sur mobile via media queries */
+  display: none; /* À adapter avec des media queries */
+}
+
+.widgetsGrid {
+  display: grid;
+  /* Ajuster le nombre de colonnes et leur taille */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; /* Espace entre les widgets */
+}
+
+/* Styles spécifiques aux widgets (contenu) */
+.widgetText {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.widgetDuration {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.widgetButton {
+  background-color: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+
+.widgetButton:hover {
+  background-color: var(--accent-secondary);
+}
+
+.graphPlaceholder {
+  height: 100px; /* Hauteur pour le placeholder du graphique */
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-radius: var(--border-radius-sm);
+}
+
+.focusWidget {
+  /* Styles spécifiques si besoin, ex: image de fond */
+  /* background-image: url('/path/to/focus-background.jpg'); */
+  background-color: #333; /* Exemple */
+  color: white; /* Adapter le texte si fond sombre */
+}
+
+.breathingDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligner les éléments */
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+.breathingIconPlaceholder {
+  font-size: 1.5rem;
+  color: var(--accent-primary);
+}
+.breathingCount {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.habitTracker {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.progressBar {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+.progressBar div {
+  width: 60%; /* Largeur dynamique basée sur la progression */
+  height: 100%;
+  background-color: var(--accent-primary);
+  border-radius: 3px;
+}
+
+.aiWidget {
+  /* Styles pour le widget IA */
+}
+.aiContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.aiContent img {
+  flex-shrink: 0;
+}
+.aiContent p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.quoteWidget {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-secondary);
+  display: flex; /* Centrer verticalement si besoin */
+  align-items: center;
+  justify-content: center;
+}
+.quoteWidget p {
+  margin: 0;
+}
+
+/* Media queries pour adapter le layout sur mobile */
+@media (max-width: 768px) {
+  .widgetsGrid {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+  }
+  .header {
+    justify-content: space-between; /* Espacer les liens et le burger */
+  }
+  .menuToggle {
+    display: block; /* Afficher le bouton burger */
+  }
+  /* Ajouter ici les styles pour cacher/afficher la sidebar sur mobile */
+}

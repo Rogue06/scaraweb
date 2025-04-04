@@ -1,0 +1,12 @@
+/* src/layouts/MainLayout/MainLayout.module.css */
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: var(--background-primary);
+}
+
+.contentArea {
+  flex-grow: 1;
+  overflow-y: auto; /* Permet le scroll si le contenu dépasse */
+  padding: 2rem 2.5rem; /* Ajustez le padding */
+}

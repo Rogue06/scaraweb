@@ -1,12 +1,10 @@
-# React + Vite
+# TODO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prochaines Étapes pour Vous :
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Icônes : Intégrez une librairie comme react-icons (npm install react-icons) et remplacez les placeholders par de vraies icônes.
+Routing : Si vous avez plusieurs pages (Méditations, etc.), installez react-router-dom (npm install react-router-dom) et configurez les routes dans App.jsx.
+État et Interactivité : Gérez l'état (ex: quel item de menu est actif, la progression de la méditation, l'état du Zen Mode) en utilisant useState, useContext ou une librairie de gestion d'état (Zustand, Redux Toolkit).
+Graphiques : Utilisez une librairie comme recharts ou chart.js pour implémenter le graphique de productivité.
+Affinement CSS : Ajustez précisément les couleurs, les polices, les espacements, et les animations pour correspondre parfaitement à la maquette. Utilisez les DevTools de votre navigateur intensivement.
+Intégration API : Connectez les composants aux endpoints de votre futur backend pour afficher des données dynamiques.

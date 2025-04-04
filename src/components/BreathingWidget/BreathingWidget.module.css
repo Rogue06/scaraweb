@@ -1,0 +1,50 @@
+/* src/components/BreathingWidget/BreathingWidget.module.css */
+.breathingWidget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.breathingCircle {
+  width: 80px; /* Taille du cercle extérieur */
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(88, 101, 242, 0.2); /* Couleur accent faible opacité */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  /* Ajoutez ici une animation (ex: scale) pour simuler la respiration */
+  animation: breatheAnimation 5s ease-in-out infinite;
+}
+
+.innerCircle {
+  width: 60px; /* Cercle intérieur */
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--accent-primary); /* Couleur accent */
+}
+
+.title {
+  margin: 0.5rem 0 0.2rem 0;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.duration {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Exemple simple d'animation */
+@keyframes breatheAnimation {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

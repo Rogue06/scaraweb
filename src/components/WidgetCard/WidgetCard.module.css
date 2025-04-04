@@ -1,0 +1,23 @@
+/* src/components/WidgetCard/WidgetCard.module.css */
+.card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius-lg); /* Coins plus arrondis */
+  padding: 1.5rem; /* Ajustez le padding */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */ /* Ombre optionnelle */
+  border: 1px solid var(--border-color); /* Bordure subtile */
+  display: flex;
+  flex-direction: column; /* Organise le titre et le contenu verticalement */
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  font-size: 1.1rem; /* Taille du titre */
+  font-weight: 600;
+}
+
+.content {
+  /* Styles pour la zone de contenu si nécessaire */
+  flex-grow: 1; /* Permet au contenu de prendre l'espace disponible */
+}
