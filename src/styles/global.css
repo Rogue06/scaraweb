@@ -1,0 +1,30 @@
+/* src/styles/global.css */
+@import "./variables.css";
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 2rem;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
