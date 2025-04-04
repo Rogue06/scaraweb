@@ -1,0 +1,33 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+src/
+├── assets/       # Images (logo, icons placeholders), etc.
+├── components/   # Composants UI réutilisables
+│   ├── Sidebar/
+│   │   ├── Sidebar.jsx
+│   │   └── Sidebar.module.css
+│   ├── WidgetCard/
+│   │   ├── WidgetCard.jsx
+│   │   └── WidgetCard.module.css
+│   └── BreathingWidget/
+│       ├── BreathingWidget.jsx
+│       └── BreathingWidget.module.css
+│   # ... autres composants (Button, Icon, etc.)
+├── layouts/      # Composants de mise en page
+│   └── MainLayout/
+│       ├── MainLayout.jsx
+│       └── MainLayout.module.css
+├── pages/        # Composants représentant les pages/vues
+│   └── Dashboard/
+│       ├── Dashboard.jsx
+│       └── Dashboard.module.css
+├── styles/       # Styles globaux, variables
+│   ├── global.css
+│   └── variables.css
+├── App.jsx       # Routing principal et application racine
+└── main.jsx      # Point d'entrée (rendu de l'App)
